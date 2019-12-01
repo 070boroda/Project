@@ -15,7 +15,8 @@ import { PostNewComponent } from './post-new/post-new.component';
     PostNewComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

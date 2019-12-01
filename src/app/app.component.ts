@@ -18,4 +18,7 @@ export class AppComponent {
     text:'fhksdjfnlksdfksldkfjlsdkjfj'}
   ]
 
+  updatePosts(post:Post) {
+    this.posts.unshift(post)
+  }
 }

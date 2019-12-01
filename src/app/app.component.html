@@ -2,9 +2,14 @@
 
 <h1>Hello World</h1>
   <hr>
-<app-post-form></app-post-form>
+<app-post-form
+  (onAdd)="updatePosts($event)"
+>
+</app-post-form>
   <hr>
-  <app-post-new></app-post-new>
-  <app-post-new></app-post-new>
+  <app-post-new
+    *ngFor="let p of posts"
+    [post]="p"
+  ></app-post-new>
 
 </div>
